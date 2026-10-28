@@ -1,0 +1,38 @@
+Package: BayesAiken
+Type: Package
+Title: Bayesian Content Validity Coefficients with Credibility
+        Intervals
+Version: 2.0.0
+Date: 2026-09-24
+Authors@R: person("Jose", "Ventura-Leon",
+                  email = "jventuraleon@gmail.com",
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-2996-4244"))
+Description: Bayesian inference for the six rating coefficients proposed by
+    Aiken (1985) <doi:10.1177/0013164485451012> and Aiken (1989)
+    <doi:10.1177/0013164489492003>: V (content validity), H (homogeneity),
+    C (congruence), R (repeatability), A (rater agreement) and I (item
+    coherence). All six are expressed as functionals of the population
+    distribution of rating categories, so a single Dirichlet-Multinomial model
+    yields their full posterior by push-forward. This treats each judge as one
+    categorical observation and avoids the pseudo-replication of Beta-Binomial
+    formulations. R is modelled on the c-by-c joint table because it is not a
+    functional of the marginal distribution. Provides classical estimates with
+    the correct parity correction, highest density and equal-tailed
+    credibility intervals, posterior threshold probabilities, prior
+    sensitivity analysis and a friendly step-by-step verbose report.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0.0)
+Imports: stats, graphics, grDevices, utils
+Suggests: testthat (>= 3.0.0), shiny, readxl, writexl, openxlsx
+URL: https://github.com/jventural/BayesAiken
+BugReports: https://github.com/jventural/BayesAiken/issues
+NeedsCompilation: no
+Packaged: 2026-10-16 13:21:58 UTC; PC
+Author: Jose Ventura-Leon [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2996-4244>)
+Maintainer: Jose Ventura-Leon <jventuraleon@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-28 11:00:18 UTC
